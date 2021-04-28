@@ -1,0 +1,231 @@
+/*Setting my font for the entire webpage*/
+@font-face {
+    font-family: openSans;
+    src: url(OpenSansCondensed-Light.ttf);
+}
+/*Header stuff*/
+header {
+    color: rgb(106, 143, 106) ;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/*header h2 {
+    text-shadow: 1px 1px 3px rgb(145, 167, 145);   
+}*/
+
+/*Nav stuff*/
+/*I was struggling to figure out what colors I wanted*/
+nav {
+    margin: auto;
+    /*padding-right: 45px;*/
+ }
+ 
+ a {
+    /*color: rgb(212, 99, 99);*/
+    /*color: #5c938c;*/
+     color:rgb(131, 83, 49) ;
+     text-decoration: none;
+     padding: 10px 35px;
+     font-size: 20px;
+ }
+
+ a:hover, .onPage {
+    /*background-color:rgb(212, 99, 99) ;*/
+    /* background-color: #5c938c;*/
+     /*background-color: rgb(131, 83, 49);*/
+     background-color: rgb(106, 143, 106) ;
+     color: #eee7d4;
+     border-radius: 20px;
+ }
+
+ nav ul {
+    list-style-type: none;
+    text-align: center;
+ }
+
+ nav ul li {
+     display: inline-block;
+ }
+
+/*Body Stuff*/
+body {
+    background-color: #eee7d4;
+    font-family: openSans;
+    letter-spacing: 1.4px;
+    color: rgb(131, 83, 49);
+}
+
+body h2,h3,h5{
+    color: rgb(106, 143, 106);   
+    text-align: center;
+}
+
+
+main{
+    margin: 20px;
+}
+main p {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+main h2 {
+    text-decoration: underline;
+}
+
+/* For flex stuff od project page*/ 
+.project img {
+    width: 500px;
+    height: 450px;
+    /*box-shadow:  5px 10px 8px rgb(156, 116, 63);*/
+}
+
+.project p{
+    padding: 0px;
+}
+
+/*Classes/IDs I made*/
+.bg {
+    background-image: url(house.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.pun {
+    font-size: 14px;
+}
+
+.brownBar {
+    border-bottom: 2px solid rgb(131, 83, 49);
+    width: 60%;
+    margin: auto;
+}
+
+.biggerBrownBar {
+    border-bottom: 2px solid rgb(131, 83, 49);
+    width: 100%;
+    margin: auto;
+}
+
+.green {
+    font-weight: 900;
+    color: rgb(106, 143, 106); 
+    font-style: oblique;
+}
+
+#contact {
+    border: 2px solid rgb(106, 143, 106);
+    font-size: 25px;
+    padding: 45px;
+    margin-right: 57%;
+    /*box-shadow: 5px 10px 8px #5c938c;*/ 
+    box-shadow: 5px 10px 8px rgb(106, 143, 106);
+    list-style-type: none;
+    /*My ul already had an id so I used this 
+    instead of the font awesome class to remove
+    my bullet points*/
+}
+
+#conImage {
+    display: block;
+    height: 400px;
+    width: 400px;
+    float: right;
+    border-radius: 50%;
+    margin-right: 10%
+}
+.clear {
+    clear: both;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.project{
+    width: 500px;
+    padding: 20px;
+    box-shadow:  5px 10px 8px burlywood;
+}
+/*All for about page grid layout*/
+.gridContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 75%;
+    gap: .5em; /*I alrady created space with 
+    adding an extra column so i didn't want the space to be
+    too big*/
+}
+
+.pic{
+    grid-column: 1 / 2;
+}
+.bio{
+    grid-column: 3 / -1;
+}
+
+.gridContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 2px solid rgb(106, 143, 106);
+   /* box-shadow:  5px 10px 8px burlywood;*/
+}
+
+.gridContainer p{
+    box-shadow:  5px 10px 8px rgb(106, 143, 106);
+    border-radius: 10% ;
+    padding: 2em;
+}
+
+
+.space {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#shadow{
+    box-shadow:  5px 10px 8px burlywood;
+}
+
+#resumeLink{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 4em;
+    margin: 1em;
+}
+
+#resumeLink a {
+    font-size: 30px;
+    padding: 20px;
+    box-shadow:  3px 3px 3px 3px rgb(106, 143, 106);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+
+@media only screen and (max-width: 690px){
+    nav{
+        padding-top: 1em;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        padding-bottom: 1.3em;
+    }
+
+}
+
+
+
+
+
